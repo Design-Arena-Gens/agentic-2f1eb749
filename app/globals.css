@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-body: "Inter", sans-serif;
+  --font-display: "Baloo 2", cursive;
+}
+
+body {
+  font-family: var(--font-body);
+  background: radial-gradient(circle at top, rgba(82, 167, 249, 0.2), transparent 55%),
+    radial-gradient(circle at bottom, rgba(244, 117, 164, 0.15), transparent 45%),
+    #0b1026;
+  min-height: 100vh;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 45px rgba(7, 13, 35, 0.4);
+  backdrop-filter: blur(16px);
+}
+
+.hero-grid {
+  background: linear-gradient(135deg, rgba(82, 167, 249, 0.2), rgba(244, 117, 164, 0.2));
+}
+
+.planet {
+  background: radial-gradient(circle at 30% 30%, #f8d477, #f475a4 65%, #52a7f9);
+}
